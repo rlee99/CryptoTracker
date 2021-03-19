@@ -3,7 +3,7 @@ import CoinList from "../components/CoinList";
 import Layout from "../components/Layout";
 import SearchBar from "../components/SearchBar";
 
-export default function Home(filteredCoins) {
+export default function Home({ filteredCoins }) {
   const [search, setSearch] = useState("");
 
   const allCoins = filteredCoins.filter((coin) =>
